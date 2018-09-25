@@ -21,6 +21,5 @@ public class PyuLib {
         input.close();
         System.out.println("Your guess was right!");
     }
-    
 }
 
