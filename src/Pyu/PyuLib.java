@@ -24,21 +24,25 @@ public class PyuLib {
     public static void AiGuessingGame()
     {
         Scanner input = new Scanner(System.in);
-        int first = (int)(Math.random()*100);
+        int first = 50;
+        int min = 0;
+        int max = 100;
         System.out.println(first);
         String response = (input.next()).toLowerCase();
         while(!(response.equals("correct")))
         {
             if(response.equals("lower"))
             {
-                int range = (first - 0)+1;
-                first = ((int)(Math.random()*range)) + 0;
+                int average = (first+min)/2;
+                max = first;
+                first = average;
                 System.out.println(first);
             }
             if(response.equals("higher"))
             {
-                int range = (100 - first)+1;
-                first = ((int)(Math.random()*range)) + first;
+                int average = (first+max/2);
+                min = first;
+                first = average;
                 System.out.println(first);
             }
             if(response.equals("correct"))
