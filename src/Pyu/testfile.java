@@ -22,11 +22,6 @@ public class testfile {
             AiGuessingGame();
             input.close();
         }
-        else
-        {
-            System.out.println("Sorry never heard of that before.");
-        }
-
     }
 }
 

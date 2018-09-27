@@ -40,17 +40,15 @@ public class PyuLib {
             }
             if(response.equals("higher"))
             {
-                int average = (first+max/2);
+                int average = (first+max)/2;
                 min = first;
                 first = average;
                 System.out.println(first);
             }
-            if(response.equals("correct"))
-            {
-                System.out.println("Yay! I won. Thanks for playing with me! :D");
-            }
             response = (input.next()).toLowerCase();
         }
+        System.out.println("Yay! I won. Thanks for playing with me! :D");
+        input.close();
     }
 }
 
